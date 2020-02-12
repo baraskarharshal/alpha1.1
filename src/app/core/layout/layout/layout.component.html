@@ -1,0 +1,9 @@
+
+<div #sidebar id="mySidebar" class="sidebar">
+    <alpha-sidebar></alpha-sidebar>
+</div>
+
+<div #main id="main">
+    <alpha-header (toggleSidebar)="toggleSidebar()"></alpha-header>
+    <router-outlet></router-outlet>
+</div>

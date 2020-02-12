@@ -1,0 +1,14 @@
+<div class="p-4">
+    <button (click)="getSelectedRows()">Get Selected Rows</button>
+    <ag-grid-angular
+    #agGrid
+    style="width: 600px; height: 200px;"
+    class="ag-theme-balham"
+    [enableFilter]="true"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    rowSelection="multiple" 
+    >
+    <!-- rowSelection="multiple" use this to select multiple rows -->
+    </ag-grid-angular>
+</div>
